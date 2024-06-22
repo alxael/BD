@@ -1,0 +1,13 @@
+
+DEPARTMENT_ID DEPARTMENT_NAME               
+------------- ------------------------------
+           20 Marketing                     
+           30 Purchasing                    
+           50 Shipping                      
+           80 Sales                         
+           90 Executive                     
+          100 Finance                       
+          110 Accounting                    
+
+7 rows selected. 
+

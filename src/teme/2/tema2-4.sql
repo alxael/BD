@@ -1,0 +1,59 @@
+WITH DATA AS (
+    SELECT
+        EMPLOYEE_ID,
+        CITY,
+        SUM(DAYS_WORKED) AS TOTAL_DAYS_WORKED
+    FROM
+        (
+            SELECT
+                JOB_HISTORY.EMPLOYEE_ID,
+                LOCATIONS.CITY,
+                SUM(JOB_HISTORY.END_DATE - JOB_HISTORY.START_DATE) AS DAYS_WORKED
+            FROM
+                JOB_HISTORY
+                INNER JOIN DEPARTMENTS ON DEPARTMENTS.DEPARTMENT_ID = JOB_HISTORY.DEPARTMENT_ID
+                INNER JOIN LOCATIONS ON LOCATIONS.LOCATION_ID = DEPARTMENTS.LOCATION_ID
+            GROUP BY
+                JOB_HISTORY.EMPLOYEE_ID,
+                LOCATIONS.CITY
+            UNION
+            ALL
+            SELECT
+                EMPLOYEES.EMPLOYEE_ID,
+                LOCATIONS.CITY,
+                SUM(WORKS_ON.END_DATE - WORKS_ON.START_DATE) AS DAYS_WORKED
+            FROM
+                EMPLOYEES
+                INNER JOIN WORKS_ON ON EMPLOYEES.EMPLOYEE_ID = WORKS_ON.EMPLOYEE_ID
+                INNER JOIN DEPARTMENTS ON EMPLOYEES.DEPARTMENT_ID = DEPARTMENTS.DEPARTMENT_ID
+                INNER JOIN LOCATIONS ON LOCATIONS.LOCATION_ID = DEPARTMENTS.LOCATION_ID
+            GROUP BY
+                EMPLOYEES.EMPLOYEE_ID,
+                LOCATIONS.CITY
+        )
+    GROUP BY
+        EMPLOYEE_ID,
+        CITY
+)
+SELECT
+    DATA.EMPLOYEE_ID,
+    (
+        SELECT
+            D1.CITY
+        FROM
+            DATA D1
+        WHERE
+            D1.EMPLOYEE_ID = DATA.EMPLOYEE_ID
+            AND D1.TOTAL_DAYS_WORKED IN (
+                SELECT
+                    MAX(D2.TOTAL_DAYS_WORKED)
+                FROM
+                    DATA D2
+                WHERE
+                    D2.EMPLOYEE_ID = DATA.EMPLOYEE_ID
+            )
+    ) AS CITY_WITH_MOST_WORKED_DAYS
+FROM
+    DATA
+ORDER BY
+    DATA.EMPLOYEE_ID;

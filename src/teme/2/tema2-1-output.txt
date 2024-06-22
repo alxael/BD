@@ -1,0 +1,13 @@
+
+EMPLOYEE_ID LAST_NAME                     SALARY     NrZile Nr total proiecte
+----------- ------------------------- ---------- ---------- -----------------
+        101 Kochhar                        17000         70                 1
+        125 Nayer                           3200        135                 2
+        136 Philtanker                      2200         87                 1
+        140 Patel                           2500         51                 1
+        145 Russell                        14000         70                 1
+        148 Cambrault                      11000         57                 1
+        200 Whalen                          4400         70                 1
+
+7 rows selected. 
+

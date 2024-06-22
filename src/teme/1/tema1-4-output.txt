@@ -1,0 +1,6 @@
+
+Table SPONSOR_AAE created.
+
+
+Table CAMPANIE_AAE created.
+

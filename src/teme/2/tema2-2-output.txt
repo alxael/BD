@@ -1,0 +1,62 @@
+
+Error starting at line : 11 in command -
+UNION ALL
+Error report -
+Unknown Command
+
+
+JOB_ID           DATA
+---------- ----------
+AD_ASST          4400
+MK_MAN          13000
+IT_PROG          4200
+SA_REP         250500
+AC_MGR          12000
+SH_CLERK        64300
+AC_ACCOUNT       8300
+FI_MGR          12000
+PU_MAN          11000
+FI_ACCOUNT       6900
+MK_REP           6000
+
+JOB_ID           DATA
+---------- ----------
+AD_PRES         24000
+SA_MAN          61000
+AD_VP           17000
+PU_CLERK         2500
+ST_MAN          36400
+ST_CLERK        55700
+HR_REP           6500
+PR_REP          10000
+
+19 rows selected. 
+
+
+JOB_ID           DATA TYP
+---------- ---------- ---
+AD_ASST          4400 MIN
+MK_MAN          13000 MIN
+IT_PROG          4200 MIN
+SA_REP         250500 SUM
+AC_MGR          12000 MIN
+SH_CLERK        64300 SUM
+AC_ACCOUNT       8300 MIN
+FI_MGR          12000 MIN
+PU_MAN          11000 MIN
+FI_ACCOUNT       6900 MIN
+MK_REP           6000 MIN
+
+JOB_ID           DATA TYP
+---------- ---------- ---
+AD_PRES         24000 AVG
+SA_MAN          61000 SUM
+AD_VP           17000 MIN
+PU_CLERK         2500 MIN
+ST_MAN          36400 SUM
+ST_CLERK        55700 SUM
+HR_REP           6500 MIN
+PR_REP          10000 MIN
+
+19 rows selected. 
+

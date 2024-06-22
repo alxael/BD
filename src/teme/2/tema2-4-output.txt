@@ -1,0 +1,23 @@
+
+EMPLOYEE_ID CITY_WITH_MOST_WORKED_DAYS    
+----------- ------------------------------
+        101 Seattle                       
+        102 Southlake                     
+        114 South San Francisco           
+        122 South San Francisco           
+        125 South San Francisco           
+        136 South San Francisco           
+        140 South San Francisco           
+        145 Oxford                        
+        148 Oxford                        
+        150 Oxford                        
+        162 Oxford                        
+
+EMPLOYEE_ID CITY_WITH_MOST_WORKED_DAYS    
+----------- ------------------------------
+        176 Oxford                        
+        200 Seattle                       
+        201 Toronto                       
+
+14 rows selected. 
+

@@ -1,0 +1,24 @@
+SELECT
+    E1.EMPLOYEE_ID,
+    (E1.LAST_NAME || ' ' || E1.FIRST_NAME) AS NAME,
+    E1.DEPARTMENT_ID,
+    E1.SALARY,
+    E1.JOB_ID
+FROM
+    EMPLOYEES E1
+    INNER JOIN EMPLOYEES E2 ON (
+        E1.EMPLOYEE_ID != E2.EMPLOYEE_ID
+        AND E1.SALARY = E2.SALARY
+        AND E1.COMMISSION_PCT = E2.COMMISSION_PCT
+        AND E1.DEPARTMENT_ID IS NOT NULL
+        AND E2.DEPARTMENT_ID =(
+            SELECT
+                DEPARTMENT_ID
+            FROM
+                DEPARTMENTS
+                INNER JOIN LOCATIONS ON (
+                    DEPARTMENTS.LOCATION_ID = LOCATIONS.LOCATION_ID
+                    AND LOCATIONS.CITY = 'Oxford'
+                )
+        )
+    );

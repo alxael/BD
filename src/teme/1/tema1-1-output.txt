@@ -1,0 +1,6 @@
+
+NAME             SALARY JOB_TITLE   DEPARTMENT_ID DEPARTMENT_NAME LOCATION_ID CITY      COUNTRY_NAME             MANAGER_FULL_NAME
+---------------- ------ ----------- ------------- --------------- ----------- --------- ------------------------ -----------------
+Austin David     4800   Programmer  60            IT              1400        Southlake United States of America Hunold Alexander
+Pataballa Valli  4800   Programmer  60            IT              1400        Southlake United States of America Hunold Alexander
+Lorentz Diana    4200   Programmer  60            IT              1400        Southlake United States of America Hunold Alexander

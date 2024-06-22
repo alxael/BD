@@ -1,0 +1,25 @@
+
+Commit complete.
+
+
+6 rows updated.
+
+
+COD_CAMPANIE TITLU                                                                                                                                                                                                                                                           DATA_STAR DATA_END  VALOARE                                  COD_SPONSOR
+------------ --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- --------- --------- ---------------------------------------- -----------
+           1 CAMP1                                                                                                                                                                                                                                                           13-MAY-24 20-JUN-24 1500                                              10
+           2 CAMP2                                                                                                                                                                                                                                                           13-MAY-24 25-JUL-24 4250                                              20
+           3 CAMP3                                                                                                                                                                                                                                                           13-MAY-24 10-JUN-24 Campanie Caritabila                               30
+           4 CAMP4                                                                                                                                                                                                                                                           13-MAY-24 20-JUN-24 Campanie Caritabila                               40
+           5 CAMP5                                                                                                                                                                                                                                                           13-MAY-24 05-JUN-24 2750                                              50
+           6 CAMP6                                                                                                                                                                                                                                                           13-MAY-24 15-AUG-24 Campanie Caritabila                               60
+           7 CAMP7                                                                                                                                                                                                                                                           13-MAY-24 02-SEP-24 6875                                              70
+           8 CAMP8                                                                                                                                                                                                                                                           13-MAY-24 10-OCT-24 Campanie Caritabila                               20
+           9 CAMP9                                                                                                                                                                                                                                                           13-MAY-24 10-JUN-24 5000                                              30
+          10 CAMP10                                                                                                                                                                                                                                                          13-MAY-24 25-SEP-24 4375                                                
+
+10 rows selected. 
+
+
+Rollback complete.
+

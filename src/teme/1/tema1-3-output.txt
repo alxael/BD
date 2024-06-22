@@ -1,0 +1,8 @@
+
+EMPLOYEE_ID NAME                                           DEPARTMENT_ID     SALARY JOB_ID    
+----------- ---------------------------------------------- ------------- ---------- ----------
+        148 Cambrault Gerald                                          80      11000 SA_MAN    
+        167 Banda Amit                                                80       6200 SA_REP    
+        174 Abel Ellen                                                80      11000 SA_REP    
+        179 Johnson Charles                                           80       6200 SA_REP    
+
